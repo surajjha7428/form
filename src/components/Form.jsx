@@ -3,12 +3,12 @@ import React, { useRef } from 'react'
 const Form = () => {
     const PasswordRef = useRef()
     const Handleshow = () => {
-        PasswordRef.current.type = "password"
+        PasswordRef.current.type = "text"
     }
   return (
     <div>
       <label htmlFor="">
-       <input type="text" placeholder='Enter Your Password' ref={PasswordRef}/>   
+       <input type="password" placeholder='Enter Your Password' ref={PasswordRef}/>   
        <button onClick={Handleshow}> Show Password</button>       
      </label>
     </div>
